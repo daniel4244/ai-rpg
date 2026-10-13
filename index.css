@@ -1,0 +1,26 @@
+:root{
+color-scheme: dark;
+--bg: #141414;
+--surface: #1e1e1e;
+--surface-2: #292929;
+--text: #e8e1d5;
+--muted: #9f978c;
+--accent: #8f3d3d;
+--accent-2: #b89b5e;
+font-family: "Segoe UI", Arial, sans-serif;
+color: var(--text);
+background-color: var(--bg);
+line-height: 1.5;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+input, select, button, textarea {
+  font: inherit;
+}

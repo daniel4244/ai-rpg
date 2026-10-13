@@ -1,0 +1,124 @@
+﻿.character-creation {
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 1rem;
+  background-color: var(--bg);
+}
+
+.character-creation-card {
+  width: 100%;
+  max-width: 460px;
+  padding: clamp(1.25rem, 5vw, 2.5rem);
+  background-color: var(--surface);
+  border: 1px solid var(--surface-2);
+  border-top: 4px solid var(--accent);
+  border-radius: 12px;
+  box-shadow: 0 25px 50px rgb(0 0 0 / 35%);
+}
+
+.character-creation-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.character-creation-header h1 {
+  margin: 0;
+  color: var(--accent-2);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.75rem, 5vw, 2.25rem);
+  line-height: 1.2;
+}
+
+.character-creation fieldset {
+  min-width: 0;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.character-creation-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.character-creation-container label {
+  margin-bottom: 0.5rem;
+  color: var(--text);
+  font-size: 1.0rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.character-creation-container input,
+.character-creation-container select {
+  width: 100%;
+  min-height: 48px;
+  padding: 0.75rem;
+  border: 1px solid var(--muted);
+  border-radius: 6px;
+  background-color: var(--surface-2);
+  color: var(--text);
+}
+
+.character-creation-container input::placeholder {
+  color: var(--muted);
+}
+
+.character-creation-container select {
+  cursor: pointer;
+}
+
+.character-creation-container input + label,
+.character-creation-container select + label {
+  margin-top: 1.5rem;
+}
+
+.character-creation-container input:hover,
+.character-creation-container select:hover {
+  border-color: var(--accent-2);
+}
+
+.character-creation-container input:focus-visible,
+.character-creation-container select:focus-visible {
+  border-color: var(--accent-2);
+  outline: 2px solid var(--accent-2);
+  outline-offset: 3px;
+}
+
+.character-creation-actions {
+  margin-top: 2rem;
+}
+
+.character-creation-actions .btn-submit {
+  width: 100%;
+  min-height: 48px;
+  padding: 0.9rem 1.2rem;
+  text-align: center;
+  background-color: var(--accent-2);
+  border: none;
+  border-radius: 6px;
+  color: var(--bg);
+  font-weight: 800;
+  font-size: 0.95rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.character-creation-actions .btn-submit:hover {
+    transform: translateY(-2px); 
+    filter: brightness(1.1); 
+}
+
+.character-creation-actions .btn-submit:focus-visible {
+  outline: 2px solid var(--accent-2);
+  outline-offset: 4px;
+}
+
+.character-creation-actions .btn-submit:active {
+  transform: translateY(1px);
+}
